@@ -1,0 +1,37 @@
+{
+  "name": "webpack-proyect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-foo": "webpack --mode production --entry ./foo/src/index.js --output-path ./foo/dist",
+    "dev-foo": "webpack --mode development --entry ./foo/src/index.js --output-path ./foo/dist",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "start": "webpack serve --mode development --open --port=3500"
+  },
+  "keywords": [],
+  "author": "Jesus Cueva",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2",
+    "bootstrap": "^5.0.1",
+    "css-loader": "^5.2.5",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "image-webpack-loader": "^7.0.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "sass": "^1.32.13",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
