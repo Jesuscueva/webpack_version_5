@@ -1,4 +1,6 @@
 import Home from "../components/index.controller"
+import Link from "../components/Link"
+import Products from "../components/Products"
 
 let content = document.getElementById("root")
 
@@ -10,9 +12,9 @@ const router = (route) => {
             return content.appendChild(Home())
         }
         case "#/Products":
-            return console.log("Products")
+            return content.appendChild(Products())
         case "#/Link":
-            return console.log("Linkkk")
+            return content.appendChild(Link())
         default:
             return console.log("404")
     }
